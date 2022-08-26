@@ -48,7 +48,7 @@ if __name__ == '__main__':
     parser.add_argument("--D", type = int, default = 10, help = "Depth of each half-space chains to be used by xStream")
     parser.add_argument("--W", type = int, default = 128, help = "Window size to be used by xStream")
 
-    parser.add_argument("-d", "--data", type = str, default = "datasets/breast_cancer_lof.csv", help = "Path for the dataset on which xStream will be used")
+    parser.add_argument("-d", "--data", type = str, default = "datasets/breast_cancer_lof.csv", help = "Path of the dataset on which xStream will be used")
     parser.add_argument("-m", "--mode", type = str, choices = ["feature_count", "average_score", "statistical_test"], default = "feature_count", help = "Anomaly explanation technique to be applied")
     parser.add_argument("-n", "--noise", type = int, default = 15, help = "Number of random noise features to be added to the original data")
     parser.add_argument("-tp", "--true_positive", action = "store_true", help = "Will use only true positives to evaluate the explanations performance, instead of all detected anomalies")
